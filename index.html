@@ -1,526 +1,537 @@
 <!doctype html>
 
 <html lang="ro">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>DeLORo | Deep Learning for Old Romanian
-  </title>
-  <meta name="description" content="Informații despre proiectul DeLORo (Deep Learning for Old Romanian)">
-  <meta name="author" content="SitePoint">
+    <title>DeLORo | Deep Learning for Old Romanian
+    </title>
+    <meta name="description" content="Informații despre proiectul DeLORo (Deep Learning for Old Romanian)">
+    <meta name="author" content="SitePoint">
 
-  <meta property="og:title" content="Deep Learning for Old Romanian">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://deloro.iit.academiaromana-is.ro/">
-  <meta property="og:description" content="Deep Learning for Old Romanian">
-  <!--
-      <meta property="og:image" content="image.png"> -->
+    <meta property="og:title" content="Deep Learning for Old Romanian">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://deloro.iit.academiaromana-is.ro/">
+    <meta property="og:description" content="Deep Learning for Old Romanian">
 
-      <!--
-	  <link rel="icon" href="/favicon.ico"> -->
-	  <!--
-	      <link rel="icon" href="/favicon.svg" type="image/svg+xml"> -->
-	      <!--
-		  <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
+    <!-- <meta property="og:image" content="image.png"> -->
+    <!-- <link rel="icon" href="/favicon.ico"> -->
+    <!-- <link rel="icon" href="/favicon.svg" type="image/svg+xml">	       -->
+    <!-- <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
 
-  <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css">
 
-</head>
+  </head>
 
-<body>
-  <main>
-    <div class="container">
-      <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-	<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-          <svg class="bi me-2" width="40" height="32">
-	    <use xlink:href="#bootstrap"/>
-	  </svg>
-          <span class="fs-4">DeLORo
-	  </span>
-	</a>
+  <body>
+    <main>
+      <div class="container">
+	<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+	  <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+            <svg class="bi me-2" width="40" height="32">
+	      <use xlink:href="#bootstrap"/>
+	    </svg>
+            <span class="fs-4">DeLORo
+	    </span>
+	  </a>
 
-	<ul class="nav nav-pills">
-          <li class="nav-item">
-	    <a href="#" class="nav-link active" aria-current="page">Acasă
+	  <ul class="nav nav-pills">
+            <li class="nav-item">
+	      <a href="#" class="nav-link active" aria-current="page">Acasă
+	      </a>
+	    </li>
+            <li class="nav-item">
+	      <a href="#obiectiv" class="nav-link">Obiectiv
+	      </a>
+	    </li>
+            <li class="nav-item">
+	      <a href="#istoric" class="nav-link">Istoric
+	      </a>
+	    </li>
+            <li class="nav-item">
+	      <a href="#tehnologii" class="nav-link">Platforma
+	      </a>
+	    </li>
+	    <li class="nav-item dropdown">
+	      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Echipa
+	      </a>
+	      <ul class="dropdown-menu">
+		<li class="dropdown-item">
+		  <a href="#parteneri" class="nav-link">Parteneri
+		  </a>
+		</li>
+		<li class="dropdown-item">
+		  <a href="#colaboratori" class="nav-link">Colaboratori
+		  </a>
+		</li>
+		<li class="dropdown-item">
+		  <a href="#echipa" class="nav-link">Membri
+		  </a>
+		</li>
+	      </ul>
+	    </li>
+            <li class="nav-item">
+	      <a href="#contact" class="nav-link">Contact
+	      </a>
+	    </li>
+	  </ul>
+	</header>
+	<h1 id="info">Informații proiect
+	</h1>
+	<table class="table">
+	  <tbody>
+	    <tr>
+	      <th>
+		Denumire
+	      </th>
+	      <td>
+		Artificial Intelligence Models (Deep Learning) Applied in the Analysis of Old Romanian Language (
+		<strong>DeLORo
+		</strong> Deep Learning for Old Romanian)
+	      </td>
+	    </tr>
+	    <tr>
+	      <th>
+		Cod proiect
+	      </th>
+	      <td>
+		PN-III-P2-2.1-PED-2019-3952
+	      </td>
+	    </tr>
+	    <tr>
+	      <th>
+		Perioada de derulare
+	      </th>
+	      <td>
+		23 octombrie 2020 — 22 octombrie 2022
+	      </td>
+	    </tr>
+	    <tr>
+	      <th>
+		Ofițer de proiect UEFISCDI
+	      </th>
+	      <td>
+		Cătălin Comarița
+	      </td>
+	    </tr>
+	  </tbody>
+	</table>
+	<h1 id="obiectiv">Obiectiv
+	</h1>
+	<p>Scopul final al proiectului este de a construi o tehnologie capabilă să transcrie automat documente românești scrise în chirilică în echivalentele lor latine, pentru a fi plasată la baza viitoarelor studii lingvistice și semantice ale limbii române. Din acest motiv, nu avem intenția de a transforma limba veche în forma sa modernă. Cercetarea lingvistică, conservarea bunurilor culturale, necesitatea de a păstra viu „sunetul” limbii, impun ca particularități lingvistice străvechi, care îl fac să pară diferit de româna zilelor noastre cu privire la morfologie, sintaxă și semantică, ar trebui lăsate neatinse. Numai astfel vom putea dezvălui influențe lingvistice și istorice.
+	</p>
+
+	<h1 id="istoric">Istoric
+	</h1>
+	<p>Scrierea chirilică este un sistem de scriere folosit în diferite limbi din Europa de Est, Caucaz, Asia Centrală și de Nord, folosit ca sistem de scriere național în diverse țări vorbitoare de limbă slavă, turcă, mongolică și iraniană. Designerii și primul distribuitor al acestei scrieri au fost teologii bizantini și frații misionari Chiril (826-869) și Methodius (815-885), cunoscuți și ca „Apostoli slavi” pentru evanghelizare a slavilor. Ei sunt creditați ca inventatori ai alfabetelor glagolitic și chirilic, primele alfabete folosite pentru transcrierea slavonei bisericești vechi. Acesta a fost limbajul pe înțelesul populației slave din timpul lor și în care cei doi frați au decis să traducă cărți liturgice.
+	</p>
+
+	<p>După migrațiile slavilor, slavona a devenit și limba liturgică a Bisericii Ortodoxe de Est din România de azi.
+	</p>
+
+	<p>Dar, în afară de țările slave, vechea slavonă bisericească a fost folosită ca limbaj administrativ (până în secolul al XVI-lea) și un limbaj liturgic de către Biserica Ortodoxă Română (până în secolul al XVII-lea).
+	</p>
+
+	<p>Deși limba nu era înțeleasă de majoritatea românilor, era cunoscută de episcopi, călugări, unii dintre preoți, grefieri, negustori, boieri și Prinț, suficient pentru a fi limba literară și oficială a principatelor Țării Românești și Moldovei, înainte de a fi treptat înlocuită de limba română în secolele XVI-XVII. Cu toate acestea, un alfabet chirilic aparte a circulat ca principal sistem de scriere pe teritoriul României istorice, cu ușoare variații individualizate prin diferențe în grafeme sau valorile lor fonetice.
+	</p>
+
+	<p>Această situație s-a schimbat în 1828, când scriitorul, filosoful și lingvistul Ion Heliade Rădulescu a transformat în întregime alfabetul chirilic românesc într-un sistem fonologic. Adoptarea formală a alfabetului latin la care s-au adăugat diacritice specifice (accente și virgule), înlocuind chirilica, a fost impusă în 1862 de Alexandru Ioan Cuza, la acea vreme - prinț al Moldovei, după o perioadă de tranziție care a durat câteva decenii.
+	</p>
+
+	<p>Apoi, la începutul celui de-al doilea război mondial, o dată ce partea estică a Moldovei a fost încorporată în Uniunea Sovietică, în noua Republică Sovietică Socialistă Moldova administrația sovietică a impus ca limba română să fie scrisă în chirilica rusă, scriere folosită pe întreg teritoriul sovietic. Această situație s-a schimbat în 1991, imediat după ce noua Republică Moldova și-a dobândit independenţa.
+	</p>
+
+	<h1 id="tehnologii">Platforma tehnologică
+	</h1>
+	<p>Tehnologia pe care o dezvoltă proiectul DeLORo nu a mai fost implementată până acum.
+	</p>
+
+	<p>Principalele dificultăți în interpretarea scrierilor românești chirilice sunt legate de:
+	  <ol>
+	    <li>Imagini greu de procesat, rezultate din scanări de pagini de documente vechi, în multe cazuri deformate sau având zone murdare sau deteriorate (cerneală și alte pete);
+	    </li>
+	    <li>Diversitatea textului, combinații de text și figuri, inechitate de fonturi, scriere uncială și scriere de mână executate de diferiți copiști, erori de copiere sau tipărire, note marginale, scriere interliniară, decorațiuni;
+	    </li>
+	    <li>Utilizarea (conform unei tradiții bine respectate) a valorilor multiple pentru unele glife chirilice;
+	    </li>
+	    <li>Lipsa regulilor de sintaxă și modificări diacronice care în mod natural au avut loc în evoluția limbii române (fonetice, morfologice, lexicale, sintactice).
+	    </li>
+	  </ol>
+	</p>
+	<p>Tehnologia finală și corpusurile colectate pentru antrenarea modelelor vor fi depuse pe o platformă care poate fi accesată în mod liber de către utilizatori experți pentru cercetare și scopuri educaționale sau pentru a produce variante adnotate, interpretative și critice ale textelor originale.
+	</p>
+	<h1 id="parteneri">Parteneri
+	</h1>
+	<ul>
+	  <li>
+	    <a href="https://acadiasi.org/">ARFI - Academia Română Filiala Iași
 	    </a>
-	  </li>
-          <li class="nav-item">
-	    <a href="#obiectiv" class="nav-link">Obiectiv
-	    </a>
-	  </li>
-          <li class="nav-item">
-	    <a href="#istoric" class="nav-link">Istoric
-	    </a>
-	  </li>
-          <li class="nav-item">
-	    <a href="#tehnologii" class="nav-link">Platforma
-	    </a>
-	  </li>
-	  <li class="nav-item dropdown">
-	    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Echipa
-	    </a>
-	    <ul class="dropdown-menu">
-              <li class="dropdown-item">
-		<a href="#parteneri" class="nav-link">Parteneri
+	    <ul>
+ 	      <li>
+		<a href="http://iit.academiaromana-is.ro/">IIT - Institutul de Informatică Teoretică
 		</a>
 	      </li>
-              <li class="dropdown-item">
-		<a href="#colaboratori" class="nav-link">Colaboratori
-		</a>
-	      </li>
-              <li class="dropdown-item">
-		<a href="#echipa" class="nav-link">Membri
+ 	      <li>
+		<a href="https://www.philippide.ro/">IFRI - Institutul de Filologie Română din Iași „A. Philippide”
 		</a>
 	      </li>
 	    </ul>
 	  </li>
-          <li class="nav-item">
-	    <a href="#contact" class="nav-link">Contact
+	  <li>
+	    <a href="https://unibuc.ro/">UB - Universitatea din București
+	    </a>
+	    <ul>
+ 	      <li>
+		<a href="https://fmi.unibuc.ro/">MI - Facultatea de Matematică - Informatică
+		</a>
+	      </li>
+	    </ul>
+	  </li>
+	</ul>
+	<h1 id="colaboratori">Colaboratori externi
+	</h1>
+	<ul>
+	  <li>
+	    <a href="https://www.uaic.ro/">UAIC - Universitatea „Alexandru Ioan Cuza” din Iași
+	    </a>
+	    <ul>
+ 	      <li>
+		<a href="http://media.lit.uaic.ro/">LIT - Facultatea de Litere
+		</a>
+	      </li>
+ 	      <li>
+		<a href="https://www.info.uaic.ro/">FII - Facultatea de Informatică
+		</a>
+	      </li>
+	    </ul>
+	  </li>
+	  <li>
+	    <a href="http://www.bcu-iasi.ro/">BCU - Biblioteca Centrală Universitară „Mihai Eminescu” Iași
+	    </a>
+	  </li>
+	  <li>
+	    <a href="https://biblacad.ro/">BAR - Biblioteca Academiei Române
+	    </a>
+	    <ul>
+ 	      <li>Biblioteca Academiei Române, Filiala Iași
+	      </li>
+	    </ul>
+	  </li>
+	  <li>
+	    <a href="https://dexonline.ro/">Dexonline
 	    </a>
 	  </li>
 	</ul>
-      </header>
-      <h1 id="info">Informații proiect
-      </h1>
-      <table class="table">
-	<tbody>
-	  <tr>
-	    <th>
-	      Denumire
-	    </th>
-	    <td>
-	      Artificial Intelligence Models (Deep Learning) Applied in the Analysis of Old Romanian Language (
-	      <strong>DeLORo
-	      </strong> Deep Learning for Old Romanian)
-	    </td>
-	  </tr>
-	  <tr>
-	    <th>
-	      Cod proiect
-	    </th>
-	    <td>
-	      PN-III-P2-2.1-PED-2019-3952
-	    </td>
-	  </tr>
-	  <tr>
-	    <th>
-	      Perioada de derulare
-	    </th>
-	    <td>
-	      23 octombrie 2020 — 22 octombrie 2022
-	    </td>
-	  </tr>
-	  <tr>
-	    <th>
-	      Ofițer de proiect UEFISCDI
-	    </th>
-	    <td>
-	      Cătălin Comarița
-	    </td>
-	  </tr>
-	</tbody>
-      </table>
-      <h1 id="obiectiv">Obiectiv
-      </h1>
-      <p>Scopul final al proiectului este de a construi o tehnologie capabilă să transcrie automat documente românești scrise în chirilică în echivalentele lor latine, pentru a fi plasată la baza viitoarelor studii lingvistice și semantice ale limbii române. Din acest motiv, nu avem intenția de a transforma limba veche în forma sa modernă. Cercetarea lingvistică, conservarea bunurilor culturale, necesitatea de a păstra viu „sunetul” limbii, impun ca particularități lingvistice străvechi, care îl fac să pară diferit de româna zilelor noastre cu privire la morfologie, sintaxă și semantică, ar trebui lăsate neatinse. Numai astfel vom putea dezvălui influențe lingvistice și istorice.
-      </p>
+	<h1 id="echipa">Membri
+	</h1>
+	<div class="album py-5 bg-light">
+	  <div class="container">
 
-      <h1 id="istoric">Istoric
-      </h1>
-      <p>Scrierea chirilică este un sistem de scriere folosit în diferite limbi din Europa de Est, Caucaz, Asia Centrală și de Nord, folosit ca sistem de scriere național în diverse țări vorbitoare de limbă slavă, turcă, mongolică și iraniană. Designerii și primul distribuitor al acestei scrieri au fost teologii bizantini și frații misionari Chiril (826-869) și Methodius (815-885), cunoscuți și ca „Apostoli slavi” pentru evanghelizare a slavilor. Ei sunt creditați ca inventatori ai alfabetelor glagolitic și chirilic, primele alfabete folosite pentru transcrierea slavonei bisericești vechi. Acesta a fost limbajul pe înțelesul populației slave din timpul lor și în care cei doi frați au decis să traducă cărți liturgice.
-      </p>
+	    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+              <div class="col">
+		<div class="card shadow-sm">
+		  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+		    <title>Speranța Cecilia Bolea
+		    </title>
+		    <rect width="100%" height="100%" fill="#55595c"/>
+		    <image width="100%" height="100%" href="assets/images/cecilia-bolea.jpg">
+		    </image>
+		  </svg>
 
-      <p>După migrațiile slavilor, slavona a devenit și limba liturgică a Bisericii Ortodoxe de Est din România de azi.
-      </p>
-
-      <p>Dar, în afară de țările slave, vechea slavonă bisericească a fost folosită ca limbaj administrativ (până în secolul al XVI-lea) și un limbaj liturgic de către Biserica Ortodoxă Română (până în secolul al XVII-lea).
-      </p>
-
-      <p>Deși limba nu era înțeleasă de majoritatea românilor, era cunoscută de episcopi, călugări, unii dintre preoți, grefieri, negustori, boieri și Prinț, suficient pentru a fi limba literară și oficială a principatelor Țării Românești și Moldovei, înainte de a fi treptat înlocuită de limba română în secolele XVI-XVII. Cu toate acestea, un alfabet chirilic aparte a circulat ca principal sistem de scriere pe teritoriul României istorice, cu ușoare variații individualizate prin diferențe în grafeme sau valorile lor fonetice.
-      </p>
-
-      <p>Această situație s-a schimbat în 1828, când scriitorul, filosoful și lingvistul Ion Heliade Rădulescu a transformat în întregime alfabetul chirilic românesc într-un sistem fonologic. Adoptarea formală a alfabetului latin la care s-au adăugat diacritice specifice (accente și virgule), înlocuind chirilica, a fost impusă în 1862 de Alexandru Ioan Cuza, la acea vreme - prinț al Moldovei, după o perioadă de tranziție care a durat câteva decenii.
-      </p>
-
-      <p>Apoi, la începutul celui de-al doilea război mondial, o dată ce partea estică a Moldovei a fost încorporată în Uniunea Sovietică, în noua Republică Sovietică Socialistă Moldova administrația sovietică a impus ca limba română să fie scrisă în chirilica rusă, scriere folosită pe întreg teritoriul sovietic. Această situație s-a schimbat în 1991, imediat după ce noua Republică Moldova și-a dobândit independenţa.
-      </p>
-
-      <h1 id="tehnologii">Platforma tehnologică
-      </h1>
-      <p>Tehnologia pe care o dezvoltă proiectul DeLORo nu a mai fost implementată până acum.
-      </p>
-
-      <p>Principalele dificultăți în interpretarea scrierilor românești chirilice sunt legate de:
-	<ol>
-	  <li>Imagini greu de procesat, rezultate din scanări de pagini de documente vechi, în multe cazuri deformate sau având zone murdare sau deteriorate (cerneală și alte pete);
-	  </li>
-	  <li>Diversitatea textului, combinații de text și figuri, inechitate de fonturi, scriere uncială și scriere de mână executate de diferiți copiști, erori de copiere sau tipărire, note marginale, scriere interliniară, decorațiuni;
-	  </li>
-	  <li>Utilizarea (conform unei tradiții bine respectate) a valorilor multiple pentru unele glife chirilice;
-	  </li>
-	  <li>Lipsa regulilor de sintaxă și modificări diacronice care în mod natural au avut loc în evoluția limbii române (fonetice, morfologice, lexicale, sintactice).
-	  </li>
-	</ol>
-      </p>
-      <p>Tehnologia finală și corpusurile colectate pentru antrenarea modelelor vor fi depuse pe o platformă care poate fi accesată în mod liber de către utilizatori experți pentru cercetare și scopuri educaționale sau pentru a produce variante adnotate, interpretative și critice ale textelor originale.
-      </p>
-      <h1 id="parteneri">Parteneri
-      </h1>
-      <ul>
-	<li>
-	  <a href="https://acadiasi.org/">ARFI - Academia Română Filiala Iași
-	  </a>
-	  <ul>
- 	    <li>
-	      <a href="http://iit.academiaromana-is.ro/">IIT - Institutul de Informatică Teoretică
-	      </a>
-	    </li>
- 	    <li>
-	      <a href="https://www.philippide.ro/">IFRI - Institutul de Filologie Română din Iași „A. Philippide”
-	      </a>
-	    </li>
-	  </ul>
-	</li>
-	<li>
-	  <a href="https://unibuc.ro/">UB - Universitatea din București
-	  </a>
-	  <ul>
- 	    <li>
-	      <a href="https://fmi.unibuc.ro/">MI - Facultatea de Matematică - Informatică
-	      </a>
-	    </li>
-	  </ul>
-	</li>
-      </ul>
-      <h1 id="colaboratori">Colaboratori externi
-      </h1>
-      <ul>
-	<li>
-	  <a href="https://www.uaic.ro/">UAIC - Universitatea „Alexandru Ioan Cuza” din Iași
-	  </a>
-	  <ul>
- 	    <li>
-	      <a href="http://media.lit.uaic.ro/">LIT - Facultatea de Litere
-	      </a>
-	    </li>
- 	    <li>
-	      <a href="https://www.info.uaic.ro/">FII - Facultatea de Informatică
-	      </a>
-	    </li>
-	  </ul>
-	</li>
-	<li>
-	  <a href="http://www.bcu-iasi.ro/">BCU - Biblioteca Centrală Universitară „Mihai Eminescu” Iași
-	  </a>
-	</li>
-	<li>
-	  <a href="https://biblacad.ro/">BAR - Biblioteca Academiei Române
-	  </a>
-	  <ul>
- 	    <li>Biblioteca Academiei Române, Filiala Iași
-	    </li>
-	  </ul>
-	</li>
-	<li>
-	  <a href="https://dexonline.ro/">Dexonline
-	  </a>
-	</li>
-      </ul>
-      <h1 id="echipa">Membri
-      </h1>
-<div class="album py-5 bg-light">
-    <div class="container">
-
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-	      <title>Speranța Cecilia Bolea
-	      </title>
-	      <rect width="100%" height="100%" fill="#55595c"/>
-	      <image width="100%" height="100%" href="assets/images/cecilia-bolea.jpg">
-	      </image>
-	    </svg>
-
-            <div class="card-body">
-              <p class="card-text">
-		Ec. Speranța Cecilia Bolea (ARFI-IIT), cercetător științific.
-	      </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-	      <title>Horia Radu Borza
-	      </title>
-	      <rect width="100%" height="100%" fill="#55595c"/>
-	      <image width="100%" height="100%" href="assets/images/radu-borza.jpg">
-	      </image>
-	    </svg>
-            <div class="card-body">
-              <p class="card-text">
-		Horia Radu Borza (dexonline).
-	      </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-	      <title>Dan Cristea
-	      </title>
-	      <rect width="100%" height="100%" fill="#55595c"/>
-	      <image width="100%" height="100%" href="assets/images/dan-cristea.jpg">
-	      </image>
-	    </svg>
-            <div class="card-body">
-              <p class="card-text">
-		Prof. dr. Dan Cristea - m.c.A.R. (ARFI-IIT), cercetător științific I.
-	      </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-	      <title>Paula Alexandra Crucianu
-	      </title>
-	      <rect width="100%" height="100%" fill="#55595c"/>
-	      <image width="100%" height="100%" href="assets/images/paula-crucianu.jpg">
-	      </image>
-	    </svg>
-            <div class="card-body">
-              <p class="card-text">
-		Dr. ec. Paula Alexandra Crucianu (ARFI-IIT), referend.
-	      </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-	      <title>Gabriela Dumitrescu
-	      </title>
-	      <rect width="100%" height="100%" fill="#55595c"/>
-	      <image width="100%" height="100%" href="assets/images/gabriela-dumitrescu.jpg">
-	      </image>
-	    </svg>
-            <div class="card-body">
-              <p class="card-text">
-		Gabriela Dumitrescu (BAR).
-	      </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-	      <title>Mihaela Găman
-	      </title>
-	      <rect width="100%" height="100%" fill="#55595c"/>
-	      <image width="100%" height="100%" href="assets/images/mihaela-gaman.jpeg">
-	      </image>
-	    </svg>
-            <div class="card-body">
-              <p class="card-text">
-		Drd. Mihaela Găman (UB), asistent cercetare științifică.
-	      </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-	      <title>Daniela Gîfu
-	      </title>
-	      <rect width="100%" height="100%" fill="#55595c"/>
-	      <image width="100%" height="100%" href="assets/images/daniela-ghifu.jpg">
-	      </image>
-	    </svg>
-            <div class="card-body">
-              <p class="card-text">
-		Dr. Daniela Gîfu (UAIC-Informatică & ARFI-IIT), cercetător științific III.
-	      </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-	      <title>Gabriela Haja
-	      </title>
-	      <rect width="100%" height="100%" fill="#55595c"/>
-	      <image width="100%" height="100%" href="assets/images/gabriela-haja.jpg">
-	      </image>
-	    </svg>
-            <div class="card-body">
-              <p class="card-text">
-		Dr. Gabriela Haja (ARFI-Philippide), cercetător științific I.
-	      </p>
-            </div>
-          </div>
-        </div>
-	        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-	      <title>Radu Ionescu
-	      </title>
-	      <rect width="100%" height="100%" fill="#55595c"/>
-	      <image width="100%" height="100%" href="assets/images/radu-ionescu.png">
-	      </image>
-	    </svg>
-            <div class="card-body">
-              <p class="card-text">
-		Conf dr. Radu Ionescu (UB), cercetător științific.
-	      </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-	      <title>Mihaela Plămadă Onofrei
-	      </title>
-	      <rect width="100%" height="100%" fill="#55595c"/>
-	      <image width="100%" height="100%" href="assets/images/mihaela-onofrei.jpg">
-	      </image>
-	    </svg>
-            <div class="card-body">
-              <p class="card-text">
-		Dr. Mihaela Plămadă Onofrei (ARFI-IIT), cercetător științific.
-	      </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-	      <title>Cristian Pădurariu
-	      </title>
-	      <rect width="100%" height="100%" fill="#55595c"/>
-	      <image width="100%" height="100%" href="assets/images/cristian-padurariu.jpg">
-	      </image>
-	    </svg>
-            <div class="card-body">
-              <p class="card-text">
-		Drd. Cristian Pădurariu (UAIC-Informatică, ARFI-IIT), asistent cercetare științifică.
-	      </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-	      <title>Marius Popescu
-	      </title>
-	      <rect width="100%" height="100%" fill="#55595c"/>
-	      <image width="100%" height="100%" href="assets/images/marius-popescu.jpg">
-	      </image>
-	    </svg>
-            <div class="card-body">
-              <p class="card-text">
-		Conf. dr. Marius Popescu (UB).
-	      </p>
-            </div>
-          </div>
-        </div>
-	        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-	      <title>Petru Rebeja
-	      </title>
-	      <rect width="100%" height="100%" fill="#55595c"/>
-	      <image width="100%" height="100%" href="assets/images/petru-rebeja.jpg">
-	      </image>
-	    </svg>
-            <div class="card-body">
-              <p class="card-text">
-		Drd. Petru Rebeja (UAIC-Informatică), asistent cercetare științifică.
-	      </p>
-            </div>
-          </div>
-	</div>
-	        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-	      <title>Liviu Andrei Scutelnicu
-	      </title>
-	      <rect width="100%" height="100%" fill="#55595c"/>
-	      <image width="100%" height="100%" href="assets/images/andrei-scutelnicu.png">
-	      </image>
-	    </svg>
-            <div class="card-body">
-              <p class="card-text">
-		Drd. Liviu Andrei Scutelnicu (UAIC-Informatica & ARFI-IIT), asistent cercetare științifică.
-	      </p>
-            </div>
-          </div>
+		  <div class="card-body">
+		    <p class="card-text">
+		      Ec. Speranța Cecilia Bolea (ARFI-IIT), cercetător științific.
+		    </p>
+		  </div>
 		</div>
-		        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-	      <title>Elena (Isabelle) Tamba
-	      </title>
-	      <rect width="100%" height="100%" fill="#55595c"/>
-	      <image width="100%" height="100%" href="assets/images/elena-tamba.jpeg">
-	      </image>
-	    </svg>
-            <div class="card-body">
-              <p class="card-text">
-		Dr. Elena (Isabelle) Tamba (ARFI-Philippide), cercetător științific I.
-	      </p>
-            </div>
-          </div>
-			</div>
+              </div>
 
-			        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-	      <title>Roxana Vieru
-	      </title>
-	      <rect width="100%" height="100%" fill="#55595c"/>
-	      <image width="100%" height="100%" href="assets/images/roxana-vieru.jpg">
-	      </image>
-	    </svg>
-            <div class="card-body">
-              <p class="card-text">
-		Lect. dr. Roxana Vieru (UAIC-Litere).
-	      </p>
-            </div>
-          </div>
-        </div>
 
+              <div class="col">
+		<div class="card shadow-sm">
+		  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+		    <title>Horia Radu Borza
+		    </title>
+		    <rect width="100%" height="100%" fill="#55595c"/>
+		    <image width="100%" height="100%" href="assets/images/radu-borza.jpg">
+		    </image>
+		  </svg>
+		  <div class="card-body">
+		    <p class="card-text">
+		      Horia Radu Borza (dexonline).
+		    </p>
+		  </div>
+		</div>
+              </div>
+
+              <div class="col">
+		<div class="card shadow-sm">
+		  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+		    <title>Dan Cristea
+		    </title>
+		    <rect width="100%" height="100%" fill="#55595c"/>
+		    <image width="100%" height="100%" href="assets/images/dan-cristea.jpg">
+		    </image>
+		  </svg>
+		  <div class="card-body">
+		    <p class="card-text">
+		      Prof. dr. Dan Cristea - m.c.A.R. (ARFI-IIT), cercetător științific I.
+		    </p>
+		  </div>
+		</div>
+              </div>
+
+              <div class="col">
+		<div class="card shadow-sm">
+		  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+		    <title>Paula Alexandra Crucianu
+		    </title>
+		    <rect width="100%" height="100%" fill="#55595c"/>
+		    <image width="100%" height="100%" href="assets/images/paula-crucianu.jpg">
+		    </image>
+		  </svg>
+		  <div class="card-body">
+		    <p class="card-text">
+		      Dr. ec. Paula Alexandra Crucianu (ARFI-IIT), referend.
+		    </p>
+		  </div>
+		</div>
+              </div>
+
+              <div class="col">
+		<div class="card shadow-sm">
+		  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+		    <title>Gabriela Dumitrescu
+		    </title>
+		    <rect width="100%" height="100%" fill="#55595c"/>
+		    <image width="100%" height="100%" href="assets/images/gabriela-dumitrescu.jpg">
+		    </image>
+		  </svg>
+		  <div class="card-body">
+		    <p class="card-text">
+		      Gabriela Dumitrescu (BAR).
+		    </p>
+		  </div>
+		</div>
+              </div>
+
+              <div class="col">
+		<div class="card shadow-sm">
+		  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+		    <title>Mihaela Găman
+		    </title>
+		    <rect width="100%" height="100%" fill="#55595c"/>
+		    <image width="100%" height="100%" href="assets/images/mihaela-gaman.jpeg">
+		    </image>
+		  </svg>
+		  <div class="card-body">
+		    <p class="card-text">
+		      Drd. Mihaela Găman (UB), asistent cercetare științifică.
+		    </p>
+		  </div>
+		</div>
+              </div>
+
+              <div class="col">
+		<div class="card shadow-sm">
+		  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+		    <title>Daniela Gîfu
+		    </title>
+		    <rect width="100%" height="100%" fill="#55595c"/>
+		    <image width="100%" height="100%" href="assets/images/daniela-ghifu.jpg">
+		    </image>
+		  </svg>
+		  <div class="card-body">
+		    <p class="card-text">
+		      Dr. Daniela Gîfu (UAIC-Informatică & ARFI-IIT), cercetător științific III.
+		    </p>
+		  </div>
+		</div>
+              </div>
+
+              <div class="col">
+		<div class="card shadow-sm">
+		  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+		    <title>Gabriela Haja
+		    </title>
+		    <rect width="100%" height="100%" fill="#55595c"/>
+		    <image width="100%" height="100%" href="assets/images/gabriela-haja.jpg">
+		    </image>
+		  </svg>
+		  <div class="card-body">
+		    <p class="card-text">
+		      Dr. Gabriela Haja (ARFI-Philippide), cercetător științific I.
+		    </p>
+		  </div>
+		</div>
+              </div>
+
+	      <div class="col">
+		<div class="card shadow-sm">
+		  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+		    <title>Radu Ionescu
+		    </title>
+		    <rect width="100%" height="100%" fill="#55595c"/>
+		    <image width="100%" height="100%" href="assets/images/radu-ionescu.png">
+		    </image>
+		  </svg>
+		  <div class="card-body">
+		    <p class="card-text">
+		      Conf dr. Radu Ionescu (UB), cercetător științific.
+		    </p>
+		  </div>
+		</div>
+              </div>
+
+              <div class="col">
+		<div class="card shadow-sm">
+		  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+		    <title>Mihaela Plămadă Onofrei
+		    </title>
+		    <rect width="100%" height="100%" fill="#55595c"/>
+		    <image width="100%" height="100%" href="assets/images/mihaela-onofrei.jpg">
+		    </image>
+		  </svg>
+		  <div class="card-body">
+		    <p class="card-text">
+		      Dr. Mihaela Plămadă Onofrei (ARFI-IIT), cercetător științific.
+		    </p>
+		  </div>
+		</div>
+              </div>
+
+              <div class="col">
+		<div class="card shadow-sm">
+		  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+		    <title>Cristian Pădurariu
+		    </title>
+		    <rect width="100%" height="100%" fill="#55595c"/>
+		    <image width="100%" height="100%" href="assets/images/cristian-padurariu.jpg">
+		    </image>
+		  </svg>
+		  <div class="card-body">
+		    <p class="card-text">
+		      Drd. Cristian Pădurariu (UAIC-Informatică, ARFI-IIT), asistent cercetare științifică.
+		    </p>
+		  </div>
+		</div>
+              </div>
+
+              <div class="col">
+		<div class="card shadow-sm">
+		  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+		    <title>Marius Popescu
+		    </title>
+		    <rect width="100%" height="100%" fill="#55595c"/>
+		    <image width="100%" height="100%" href="assets/images/marius-popescu.jpg">
+		    </image>
+		  </svg>
+		  <div class="card-body">
+		    <p class="card-text">
+		      Conf. dr. Marius Popescu (UB).
+		    </p>
+		  </div>
+		</div>
+              </div>
+
+	      <div class="col">
+		<div class="card shadow-sm">
+		  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+		    <title>Petru Rebeja
+		    </title>
+		    <rect width="100%" height="100%" fill="#55595c"/>
+		    <image width="100%" height="100%" href="assets/images/petru-rebeja.jpg">
+		    </image>
+		  </svg>
+		  <div class="card-body">
+		    <p class="card-text">
+		      Drd. Petru Rebeja (UAIC-Informatică), asistent cercetare științifică.
+		    </p>
+		  </div>
+		</div>
+	      </div>
+
+	      <div class="col">
+		<div class="card shadow-sm">
+		  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+		    <title>Liviu Andrei Scutelnicu
+		    </title>
+		    <rect width="100%" height="100%" fill="#55595c"/>
+		    <image width="100%" height="100%" href="assets/images/andrei-scutelnicu.png">
+		    </image>
+		  </svg>
+		  <div class="card-body">
+		    <p class="card-text">
+		      Drd. Liviu Andrei Scutelnicu (UAIC-Informatica & ARFI-IIT), asistent cercetare științifică.
+		    </p>
+		  </div>
+		</div>
+	      </div>
+
+	      <div class="col">
+		<div class="card shadow-sm">
+		  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+		    <title>Elena (Isabelle) Tamba
+		    </title>
+		    <rect width="100%" height="100%" fill="#55595c"/>
+		    <image width="100%" height="100%" href="assets/images/elena-tamba.jpeg">
+		    </image>
+		  </svg>
+		  <div class="card-body">
+		    <p class="card-text">
+		      Dr. Elena (Isabelle) Tamba (ARFI-Philippide), cercetător științific I.
+		    </p>
+		  </div>
+		</div>
+	      </div>
+
+	      <div class="col">
+		<div class="card shadow-sm">
+		  <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+		    <title>Roxana Vieru
+		    </title>
+		    <rect width="100%" height="100%" fill="#55595c"/>
+		    <image width="100%" height="100%" href="assets/images/roxana-vieru.jpg">
+		    </image>
+		  </svg>
+		  <div class="card-body">
+		    <p class="card-text">
+		      Lect. dr. Roxana Vieru (UAIC-Litere).
+		    </p>
+		  </div>
+		</div>
+              </div>
+
+	    </div>
+	  </div>
+	</div>
+	<h1 id="contact">Contact
+	</h1>
+	<p>
+	  Pentru detalii vă rugăm să contactați unul din responsabilii de proiect:
+	  <ul>
+	    <li>
+	      <span>M.c. A. R.
+		<strong>Dan Cristea
+		</strong>
+	      </span>
+	      <blockquote>danu [punct] cristea [at] gmail.com
+	      </blockquote>
+	    </li>
+	    <li>
+	      <span>Conferențiar Doctor
+		<strong>Marius Popescu
+		</strong>
+	      </span>
+	      <blockquote>marius [punct] popescu [at] fmi.unibuc.ro
+	      </blockquote>
+	    </li>
+	  </ul>
+	</p>
       </div>
-    </div>
-  </div>
-<h1 id="contact">Contact
-</h1>
-      <p>
-	Pentru detalii vă rugăm să contactați unul din responsabilii de proiect:
-	<ul>
-	  <li>
-	    <span>M.c. A. R.
-	      <strong>Dan Cristea
-	      </strong>
-	    </span>
-	    <blockquote>danu [punct] cristea [at] gmail.com
-	    </blockquote>
-	  </li>
-	  <li>
-	    <span>Conferențiar Doctor
-	      <strong>Marius Popescu
-	      </strong>
-	    </span>
-	    <blockquote>marius [punct] popescu [at] fmi.unibuc.ro
-	    </blockquote>
-	  </li>
-	</ul>
-      </p>
-    </div>
-  </main>
-  <script src="assets/dist/js/bootstrap.bundle.min.js">
-  </script>
-</body>
+    </main>
+    <script src="assets/dist/js/bootstrap.bundle.min.js">
+    </script>
+  </body>
 </html>

@@ -5,3 +5,13 @@
 .bg-light{
     background-color: #fdfdfd !important;
 }
+
+ul.contact-info{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+ul.contact-info > li > blockquote > svg {
+    width: 16px;
+    height: 16px;
+}

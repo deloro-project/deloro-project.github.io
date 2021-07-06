@@ -1,0 +1,7 @@
+.card-body{
+    min-height: 105px;
+}
+
+.bg-light{
+    background-color: #fdfdfd !important;
+}

@@ -19,7 +19,7 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
+    environment: production
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -40,3 +40,9 @@ jobs:
       
       - name: Archive sources
         run: zip -r $RUNNER_TEMP/staging/deloro-www.zip $RUNNER_TEMP/staging/
+        
+      - name: Install sshpass
+        run: apt install -y sshpass
+ 
+      - name: Copy artifact
+        run: sshpass -p '$USER_PASSWORD' scp -p $SSH_PORT $RUNNER_TEMP/staging/deloro-www.zip $USER_NAME@SERVER_IP:~

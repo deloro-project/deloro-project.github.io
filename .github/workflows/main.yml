@@ -36,4 +36,6 @@ jobs:
       - name: Zip sources
         run: |
           cd $GITHUB_WORKSPACE
+          cd ..
           pwd
+          rm -rvf /tmp/staging/*

@@ -55,6 +55,7 @@ jobs:
           echo SSH agent started
           ssh-add ~/.ssh/id_rsa
           ssh-keyscan -H 'github.com' >> ~/.ssh/known_hosts
+          ssh-keyscan ${{secrets.HOST}} >> ~/.ssh/known_hosts
 
       - name: Copy artifact
         run: scp -p ${{secrets.SSH_PORT}} $RUNNER_TEMP/staging/deloro-www.zip ${{secrets.USERNAME}}@${{secrets.HOST}}:~/

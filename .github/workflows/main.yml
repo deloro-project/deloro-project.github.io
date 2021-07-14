@@ -58,4 +58,4 @@ jobs:
           ssh-keyscan ${{secrets.HOST}} >> ~/.ssh/known_hosts
 
       - name: Copy artifact
-        run: scp -v -p ${{secrets.SSH_PORT}} $RUNNER_TEMP/deloro-www.zip ${{secrets.USERNAME}}@${{secrets.HOST}}:/tmp/
+        run: scp -v -P ${{secrets.SSH_PORT}} $RUNNER_TEMP/deloro-www.zip ${{secrets.USERNAME}}@${{secrets.HOST}}:/tmp/

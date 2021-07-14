@@ -41,12 +41,8 @@ jobs:
       - name: Archive sources
         run: zip -r $RUNNER_TEMP/staging/deloro-www.zip $RUNNER_TEMP/staging/
 
+      - name: Install sshpass
+        run: sudo apt install -y sshpass
+
       - name: Copy artifact
-        uses: appleboy/scp-action@v0.0.1
-        with:
-          host: ${{ secrets.SERVER_IP }}
-          username: ${{ secrets.USER_NAME }}
-          password: ${{ secrets.USER_PASSWORD }}
-          port: ${{ secrets.SSH_PORT }}
-          source: $RUNNER_TEMP/staging/deloro-www.zip
-          target: ~/
+        run: sshpass -p '$USER_PASSWORD' scp -p $SSH_PORT $RUNNER_TEMP/staging/deloro-www.zip $USER_NAME@SERVER_IP:~/

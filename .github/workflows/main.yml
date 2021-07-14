@@ -41,8 +41,20 @@ jobs:
       - name: Archive sources
         run: zip -r $RUNNER_TEMP/staging/deloro-www.zip $RUNNER_TEMP/staging/
 
-      - name: Install sshpass
-        run: sudo apt install -y sshpass
+      - name: Setup ssh authorization
+        env:
+          SSH_PRIVATE_KEY: ${{secrets.RSA_PRIVATE_KEY}}
+          SSH_PUBLIC_KEY: ${{secrets.RSA_PUBLIC_KEY}}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$SSH_PUBLIC_KEY" | tr -d '\r' > ~/.ssh/id_rsa.pub
+          chmod 700 ~/.ssh/id_rsa.pub
+          echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+          chmod 700 ~/.ssh/id_rsa
+          eval $(ssh-agent -s)
+          echo SSH agent started
+          ssh-add ~/.ssh/id_rsa
+          ssh-keyscan -H 'github.com' >> ~/.ssh/known_hosts
 
       - name: Copy artifact
-        run: sshpass -p '${{secrets.USER_PASSWORD}}' scp -p ${{secrets.SSH_PORT}} -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $RUNNER_TEMP/staging/deloro-www.zip ${{secrets.USER_NAME}}@${{secrets.SERVER_IP}}:~/
+        run: scp -p ${{secrets.SSH_PORT}} $RUNNER_TEMP/staging/deloro-www.zip ${{secrets.USERNAME}}@${{secrets.HOST}}:~/

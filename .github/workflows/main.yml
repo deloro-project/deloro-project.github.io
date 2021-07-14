@@ -45,4 +45,4 @@ jobs:
         run: sudo apt install -y sshpass
 
       - name: Copy artifact
-        run: sshpass -p '${{secrets.USER_PASSWORD}}' scp -p ${{secrets.SSH_PORT}} $RUNNER_TEMP/staging/deloro-www.zip ${{secrets.USER_NAME}}@${{secrets.SERVER_IP}}:~/
+        run: sshpass -p '${{secrets.USER_PASSWORD}}' scp -p ${{secrets.SSH_PORT}} -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $RUNNER_TEMP/staging/deloro-www.zip ${{secrets.USER_NAME}}@${{secrets.SERVER_IP}}:~/

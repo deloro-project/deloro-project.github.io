@@ -63,6 +63,4 @@ jobs:
         run: scp -v -P ${{secrets.SSH_PORT}} $RUNNER_TEMP/staging/deloro-www.zip ${{secrets.USERNAME}}@${{secrets.HOST}}:/tmp/
         
       - name: Deploy artifact
-        run: |
-          ssh -p ${{secrets.SSH_PORT}} ${{secrets.USERNAME}}@${{secrets.HOST}}
-          unzip /tmp/deloro-www.zip -d /var/www/html/
+        run: ssh -p ${{secrets.SSH_PORT}} ${{secrets.USERNAME}}@${{secrets.HOST}} unzip /tmp/deloro-www.zip -d /var/www/html/

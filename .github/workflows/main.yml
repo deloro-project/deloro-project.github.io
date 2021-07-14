@@ -39,7 +39,9 @@ jobs:
           rm README.md LICENSE .gitignore
       
       - name: Archive sources
-        run: zip -r $RUNNER_TEMP/deloro-www.zip $RUNNER_TEMP/staging/
+        run: |
+          cd $RUNNER_TEMP/staging/
+          zip -r deloro-www.zip ./
 
       - name: Setup ssh authorization
         env:

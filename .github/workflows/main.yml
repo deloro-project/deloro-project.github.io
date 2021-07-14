@@ -25,17 +25,20 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout sources
         uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
-      - name: Cleanup sources
-        run: |
-          rm -r .git .github
-          rm README.md LICENSE .gitignore
-
-      # Runs a set of commands using the runners shell
-      - name: Zip sources
+        
+      - name: Move sources to staging directory
         run: |
           cd $GITHUB_WORKSPACE
           rm -rvf $RUNNER_TEMP/staging/*
           cp -r . $RUNNER_TEMP/staging/
-          ls $RUNNER_TEMP/staging/
+
+      - name: Cleanup sources
+        run: |
+          cd $RUNNER_TEMP/staging/
+          rm -r .git .github
+          rm README.md LICENSE .gitignore
+      
+      - name: Archive sources
+        run: |
+          zip -r $RUNNER_TEMP/staging/deloro-www.zip $RUNNER_TEMP/staging/
+          ls -l $RUNNER_TEMP/staging/deloro-www.zip

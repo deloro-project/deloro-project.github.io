@@ -39,7 +39,7 @@ jobs:
           rm README.md LICENSE .gitignore
       
       - name: Archive sources
-        run: zip -r $RUNNER_TEMP/staging/deloro-www.zip $RUNNER_TEMP/staging/
+        run: zip -r $RUNNER_TEMP/deloro-www.zip $RUNNER_TEMP/staging/
 
       - name: Setup ssh authorization
         env:
@@ -58,4 +58,4 @@ jobs:
           ssh-keyscan ${{secrets.HOST}} >> ~/.ssh/known_hosts
 
       - name: Copy artifact
-        run: scp -p ${{secrets.SSH_PORT}} $RUNNER_TEMP/staging/deloro-www.zip ${{secrets.USERNAME}}@${{secrets.HOST}}:~/
+        run: scp -v -p ${{secrets.SSH_PORT}} $RUNNER_TEMP/deloro-www.zip ${{secrets.USERNAME}}@${{secrets.HOST}}:/tmp/

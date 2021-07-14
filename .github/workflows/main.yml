@@ -39,6 +39,4 @@ jobs:
           rm README.md LICENSE .gitignore
       
       - name: Archive sources
-        run: |
-          zip -r $RUNNER_TEMP/staging/deloro-www.zip $RUNNER_TEMP/staging/
-          ls -l $RUNNER_TEMP/staging/deloro-www.zip
+        run: zip -r $RUNNER_TEMP/staging/deloro-www.zip $RUNNER_TEMP/staging/

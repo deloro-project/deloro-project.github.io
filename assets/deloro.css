@@ -19,3 +19,12 @@ ul.contact-info > li > blockquote > svg {
 .nav-link{
     color: #0d6efd !important;
 }
+
+ul.results-list{
+    list-style: none;
+}
+
+ul.results-list li::before{
+    content: "\2705";
+    padding-right: 5px;
+}
